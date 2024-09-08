@@ -16,87 +16,21 @@
 
 # Proje nasıl çalıştırılır
   1- Bilgisayarınızda bir yerel sunucu olmaması girekerir  Sunucu Yazılımı (XAMPP, WAMP, MAMP, vb.):
+      Bilgisayarınıza bir sunucu yazılımı yükleyin. XAMPP (Windows, Linux, macOS için), WAMP (Windows için) veya MAMP (macOS için) gibi araçlar, Apache (web sunucusu), MySQL (veritabanı sunucusu) ve PHP’yi bir arada getirir.
+      İlgili yazılımı indirip kurun. Kurulum sırasında Apache ve MySQL servislerinin çalıştığından emin olun.
 
-Bilgisayarınıza bir sunucu yazılımı yükleyin. XAMPP (Windows, Linux, macOS için), WAMP (Windows için) veya MAMP (macOS için) gibi araçlar, Apache (web sunucusu), MySQL (veritabanı sunucusu) ve PHP’yi bir arada getirir.
-İlgili yazılımı indirip kurun. Kurulum sırasında Apache ve MySQL servislerinin çalıştığından emin olun.
+   2-  Veritabanı Oluşturma
+         PhpMyAdmin ile Veritabanı Oluşturma
+         Tarayıcınızda http://localhost/phpmyadmin adresine gidin.
+         veri_tabani2024 dosyası var olan phpmyadmin deki açın ve veri tabanı oluşturun aynı veri tabanı adı olması lazım dekkat edin  
+   3- PHP Dosyaları 
+       PHP Dosyası Oluşturmuş olan:
+       htdocs (XAMPP) veya www (WAMP) gibi dizinlere gidin ve var oaln Order-Food-Project klasör adı tümünü yerleşterin...
+  4- Tarayıcınızda http://localhost/Order-Food-Project açın bu şekilde tüm sayfalar zeyaret edebilirsiniz ve sipariş veribilersiniz...
+  5 - Tarayıcınızda http://localhost/Order-Food-Project/Yonetici_islemleri açın 
+  kullancı adı 'admin'
+  Şifre '12345'
+  'Yonetici' işaretleyin ve giriş yababilirsiniz 
+  bu şekilde  ekleme -> Silme -> Güncelleme -> Raporlama tüm işlemleri yababilirsiniz 
+   
 
-2. Veritabanı Oluşturma
-PhpMyAdmin ile Veritabanı Oluşturma
-
-Tarayıcınızda http://localhost/phpmyadmin adresine gidin.
-“Databases” sekmesine gidin ve yeni bir veritabanı oluşturun. Veritabanınıza bir isim verin ve “Create” butonuna tıklayın.
-Tablolar Oluşturma:
-Veritabanınız oluşturulduktan sonra, tablolar eklemek için veritabanınızı seçin.
-“SQL” sekmesine gidin ve tablolarınızı oluşturacak SQL sorgularını yazın veya “Structure” sekmesinden tablo ekleyin.
-3. PHP Dosyaları Oluşturma
-PHP Dosyası Oluşturma:
-
-htdocs (XAMPP) veya www (WAMP) gibi dizinlere gidin ve projeleriniz için bir klasör oluşturun.
-Bu klasörde bir PHP dosyası oluşturun (örneğin, index.php).
-Temel PHP Dosyası:
-
-php
-نسخ الكود
-<?php
-// Veritabanı bağlantısı
-$servername = "localhost";
-$username = "root"; // XAMPP/WAMP varsayılan kullanıcı adı
-$password = ""; // Varsayılan olarak boş olabilir
-$dbname = "veritabani_adiniz"; // Daha önce oluşturduğunuz veritabanı adı
-
-// Bağlantıyı oluştur
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Bağlantıyı kontrol et
-if ($conn->connect_error) {
-    die("Bağlantı başarısız: " . $conn->connect_error);
-}
-echo "Bağlantı başarılı!";
-?>
-Veritabanı ile Etkileşim:
-
-Veritabanına veri ekleme, veri çekme ve güncelleme gibi işlemler yapmak için PHP kodları yazabilirsiniz.
-Örnek: Veritabanından Veri Çekme
-
-php
-نسخ الكود
-<?php
-// Veritabanı bağlantısı
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Sorgu oluştur
-$sql = "SELECT id, isim FROM kullanicilar";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // Her bir satırı göster
-    while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - İsim: " . $row["isim"]. "<br>";
-    }
-} else {
-    echo "0 sonuç";
-}
-$conn->close();
-?>
-4. Web Sunucusunu Çalıştırma
-Sunucuyu Başlatma:
-
-XAMPP veya WAMP kontrol panelinden Apache ve MySQL servislerini başlatın.
-Tarayıcıdan Erişim:
-
-Tarayıcınızda http://localhost/projeniz adresine gidin. PHP dosyalarınız çalışmaya başlayacaktır.
-5. Güvenlik ve Hata Ayıklama
-Güvenlik:
-
-SQL enjeksiyonlarına karşı önlemler almak için prepared statements veya mysqli_real_escape_string() gibi yöntemleri kullanın.
-Giriş bilgilerinizin ve şifrelerin güvenliğini sağlamak için uygun yöntemleri kullanın.
-Hata Ayıklama:
-
-Hataları anlamak ve düzeltmek için PHP hata raporlamayı aktif edin:
-php
-نسخ الكود
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-Bu temel adımlar, PHP ve MySQL kullanarak bir proje geliştirmek için gerekli olan süreçlerin genel bir özetidir. Projeye özgü daha detaylı gereksinimler ve özellikler için ek kaynaklar ve dokümantasyonlara başvurabilirsiniz.
-  
