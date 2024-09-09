@@ -1,20 +1,20 @@
 # Order-Food-Project
 # Proje Başlığı 
    Yemek Siparişi 
-# Projenin amacı  
+ Projenin amacı  
    İnternetten sipariş vermek isteyen ve Siparişler Yönetimi 
-# Projenin Hedef kitlesi 
+ Projenin Hedef kitlesi 
   Mahalledeki Restorandan sipariş vermek isteyen  internet kullanıcılarını aynı ortamda buluşturmak 
-# Projede Kullanılan Teknolojiler 
+ Projede Kullanılan Teknolojiler 
  Html / Css / JS / Php / Mysql  
-# Projeden Beklentileriniz
+ Projeden Beklentileriniz
     - Sipariş verme işlemleri
     - Yönetim paneli  
   + Raporlama İşlemleri
     - Ürün bilgileri ve Sipariş takibi
     - Faturalandırma
 
-# Proje nasıl çalıştırılır
+ Proje nasıl çalıştırılır
   1- Bilgisayarınızda bir yerel sunucu olmaması girekerir  Sunucu Yazılımı (XAMPP, WAMP, MAMP, vb.):
       Bilgisayarınıza bir sunucu yazılımı yükleyin. XAMPP (Windows, Linux, macOS için), WAMP (Windows için) veya MAMP (macOS için) gibi araçlar, Apache (web sunucusu), MySQL (veritabanı sunucusu) ve PHP’yi bir arada getirir.
       İlgili yazılımı indirip kurun. Kurulum sırasında Apache ve MySQL servislerinin çalıştığından emin olun.
