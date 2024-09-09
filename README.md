@@ -8,8 +8,8 @@
  Projede Kullanılan Teknolojiler 
  Html / Css / JS / Php / Mysql  
  Projeden Beklentileriniz
-    - Sipariş verme işlemleri
-    - Yönetim paneli  
+     Sipariş verme işlemleri
+     Yönetim paneli  
   + Raporlama İşlemleri
     - Ürün bilgileri ve Sipariş takibi
     - Faturalandırma
