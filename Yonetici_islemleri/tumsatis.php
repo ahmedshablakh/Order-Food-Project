@@ -27,8 +27,8 @@ header('Content-Type: application/x-msexcel; charset=UTF-8; format=attachment;')
 </head>
 
 <body >
-<h2 align="center" style="background-color:#3399FF">ALDANA DONER</h2>
- <h4 align="center" bgcolor="#CCCCCC">MERSIN</h4> 
+<h2 align="center" style="background-color:#3399FF">Order-Food</h2>
+ <h4 align="center" bgcolor="#CCCCCC">Order-Food</h4> 
 
 
   <table  width="50%" border="1" align='center' class="tbl-full">
