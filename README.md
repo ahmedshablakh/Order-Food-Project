@@ -6,7 +6,7 @@
 + Projenin Hedef kitlesi 
   - Mahalledeki Restorandan sipariş vermek isteyen  internet kullanıcılarını aynı ortamda buluşturmak 
 + Projede Kullanılan Teknolojiler 
-  - Html / Css / JS / Php / Mysql  
+  - Html / Css / Js / Php / Mysql  
 + Projeden Beklentileriniz
     - Sipariş verme işlemleri
     - Yönetim paneli  
