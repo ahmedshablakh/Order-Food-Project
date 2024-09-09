@@ -7,7 +7,7 @@
   - Mahalledeki Restorandan sipariş vermek isteyen  internet kullanıcılarını aynı ortamda buluşturmak 
 + Projede Kullanılan Teknolojiler 
   - Html / Css / Js / Php / Mysql  
-+ Projeden Beklentileriniz
++ Projeden Beklentileri
     - Sipariş verme işlemleri
     - Yönetim paneli  
   + Raporlama İşlemleri
