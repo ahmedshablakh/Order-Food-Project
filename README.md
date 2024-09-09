@@ -5,8 +5,8 @@
    İnternetten sipariş vermek isteyen ve Siparişler Yönetimi 
  Projenin Hedef kitlesi 
   Mahalledeki Restorandan sipariş vermek isteyen  internet kullanıcılarını aynı ortamda buluşturmak 
- Projede Kullanılan Teknolojiler 
- Html / Css / JS / Php / Mysql  
++ Projede Kullanılan Teknolojiler 
+ - Html / Css / JS / Php / Mysql  
 + Projeden Beklentileriniz
     - Sipariş verme işlemleri
     - Yönetim paneli  
