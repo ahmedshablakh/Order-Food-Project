@@ -31,6 +31,6 @@
     kullancı adı 'admin'
     Şifre '12345'
     'Yonetici' işaretleyin ve giriş yababilirsiniz 
-    bu şekilde  ekleme -> Silme -> Güncelleme -> Raporlama tüm işlemleri yababilirsiniz 
+    bu şekilde  ekleme -> Silme -> Güncelleme -> Raporlama tüm işlemleri yababilirsiniz.
    
 
