@@ -29,7 +29,7 @@
   - Tarayıcınızda http://localhost/Order-Food-Project açın bu şekilde tüm sayfalar zeyaret edebilirsiniz ve sipariş veribilersiniz...
   - Tarayıcınızda http://localhost/Order-Food-Project/Yonetici_islemleri açın 
     kullancı adı 'admin'
-    Şifre '12345'
+    Şifre '1234'
     'Yonetici' işaretleyin ve giriş yababilirsiniz 
     bu şekilde  ekleme -> Silme -> Güncelleme -> Raporlama tüm işlemleri yababilirsiniz.
    
